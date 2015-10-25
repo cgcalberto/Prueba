@@ -92,7 +92,8 @@ transform: translate3d(0, 0, 0);
     background: -ms-linear-gradient(top, #efe878 0%,#fcb71a 100%); /* IE10+ */
     background: linear-gradient(to bottom, #efe878 0%,#fcb71a 100%); /* W3C */
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px;    
+    padding-bottom: 5px;
 }
 
 .heading {
@@ -332,8 +333,8 @@ footer > div{
         padding-top: 0;    
     }
     .navigation-tabs{
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
     footer h5{
         font-size: 11px;
