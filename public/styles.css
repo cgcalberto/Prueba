@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'din_medium';
+    src: url('/fonts/DIN Medium.ttf');
+}
+@font-face {
+    font-family: 'samesame';
+    src: url('/fonts/SameSameButDifferent.ttf');
+}
+@font-face {
+    font-family: 'titillium';
+    src: url('/fonts/TitilliumText22L001.otf');
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('/imgs/bg-app.png');    
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: Arial;
+}
+
+header{
+    text-align: center;
+}
+
+header > div{
+    margin-bottom: 40px;
+}
+
+.first-cloud{
+    background-image: url('/imgs/cloud1.png');
+    width: 800px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 500px 200px;
+    position: absolute;
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);  
+    animation-name: cloudOne;
+    animation-duration: 160s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+.second-cloud{
+    background-image: url('/imgs/cloud2.png');
+    width: 500px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 350px 220px;
+    position: absolute;
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);    
+    animation-name: cloudTwo;
+    animation-duration: 160s;
+    animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+
+.navigation{
+    border-top: 3px solid #efe878;
+}
+
+.navigation-tabs{
+    background: #efe878; /* Old browsers */
+    background: -moz-linear-gradient(top, #efe878 0%, #fcb71a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efe878), color-stop(100%,#fcb71a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efe878 0%,#fcb71a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efe878 0%,#fcb71a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efe878 0%,#fcb71a 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #efe878 0%,#fcb71a 100%); /* W3C */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.heading {
+    font-family: 'samesame';
+    color: white;
+    font-size: 58px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;    
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.search input:-moz-placeholder {
+    color:    #ffffff;
+}
+.search input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+
+.search{
+    background-color: #045473;
+    opacity: 0.8;
+    border-radius: 50px;
+    height: 40px;
+    box-shadow: inset 1px 1px 15px -3px rgba(4, 84, 115, 0.65);
+}
+
+.search:focus{
+    outline: none;
+}
+
+.search input{
+    background-color: transparent;
+    border: none;    
+    text-indent: 15px;    
+    width: 100%;
+    color: white;
+}
+
+.search span{
+    color: #ffb000;    
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.content{
+    padding-top: 40px;
+}
+
+.odd{
+  background-color: #80cedb;
+}
+
+.even{
+  background-color: #4db8cb;
+}
+
+.song{
+    padding: 10px 10px 10px 10px;
+    margin: 2px 0 2px 0;
+}
+
+.song-info{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.song-title{
+    display: block;
+    font-family: 'din_medium';
+    font-size: 12px;    
+    text-transform: capitalize;    
+    font-weight: bold;
+}
+
+.song-artist{
+    display: block;
+    font-family: Arial;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.btn-play{
+    background: #d578cb; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #d578cb 0%, #a7459b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#d578cb), color-stop(100%,#a7459b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #d578cb 0%,#a7459b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #d578cb 0%,#a7459b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #d578cb 0%,#a7459b 100%); /* IE10+ */
+    background: linear-gradient(135deg, #d578cb 0%,#a7459b 100%); /* W3C */
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttons{
+    width: 133px;;
+    display: inline-block;
+    float: right;
+}
+
+.radio-type{
+    width: 48%;
+    display: inline-block;
+}
+
+.left-btn{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.right-btn{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio]:checked + .check_label:before {
+    content: "\2022";
+    color: #018288;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid rgba(0,0,0,0.9);
+}
+
+input[type=radio]:not(old) + label{
+    display      : inline-block;
+    line-height  : 1.3em;
+}
+
+input[type=radio]:not(old) + label > span{
+    display: inline-block;
+    background: #ffeb6c; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffeb6c 0%, #fcb71b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffeb6c), color-stop(100%,#fcb71b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffeb6c 0%,#fcb71b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffeb6c 0%,#fcb71b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffeb6c 0%,#fcb71b 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffeb6c 0%,#fcb71b 100%); /* W3C */
+    color: black;
+    padding: 5px 15px 5px 15px;
+    font-family: 'din_medium';
+    font-weight: normal;
+    border: 1px solid #e4ba28;
+}
+
+input[type=radio]:not(old):checked +  label > span {
+    background: #e1bc30;
+}
+
+footer{
+    background-image: url('/imgs/footer.png');
+    height: 113px;
+    font-family: Arial;
+    text-align: center;
+    position: fixed;
+    color: #ffb000;
+    width: 100%;
+    bottom: 0;
+}
+
+footer > div{
+    padding-top: 30px;
+}
+
+
+/************************MEDIA QUERIES********************/
+
+
+@media (max-width: 1366px){
+    .first-cloud{
+        width: 350px;
+        height: 150px;
+        background-size: 350px 150px;
+        animation-name: cloudOneMd;
+        animation-duration: 120s;
+    }
+
+    .second-cloud{
+        width: 280px;
+        height: 180px;
+        background-size: 280px 180px;
+        animation-name: cloudTwoMd;
+        animation-duration: 120s;
+    }
+}
+
+@media (max-width: 992px){
+    .first-cloud{
+        width: 250px;
+        height: 100px;
+        background-size: 250px 100px;
+        animation-name: cloudOneSm;
+        animation-duration: 90s;
+    }
+
+    .second-cloud{
+        width: 200px;
+        height: 120px;
+        background-size: 200px 120px;
+        animation-name: cloudTwoSm;
+        animation-duration: 90s;
+    }
+}
+
+@media (max-width: 768px){
+    .heading{
+        font-size: 30px;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .container{
+        padding-top: 0;    
+    }
+    .navigation-tabs{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    footer h5{
+        font-size: 11px;
+    }
+    .first-cloud{
+        width: 110px;
+        height: 40px;
+        background-size: 110px 40px;
+        animation-name: cloudOneXs;
+        animation-duration: 60s;
+    }
+
+    .second-cloud{
+        width: 60px;
+        height: 45px;
+        background-size: 60px 45px;
+        animation-name: cloudTwoXs;
+        animation-duration: 60s;
+    }
+}
+
+
+/*****************************ANIMATION**********************/
+
+@keyframes cloudOne {
+    0%   {left:0px; top:90px;}
+    50%  {left:1000px; top:90px;}    
+    100% {left:0px; top:90px;}
+}
+
+@keyframes cloudTwo {
+    0%   {left:1000px; top:90px;}
+    50%  {left:0px; top:90px;}    
+    100% {left:1000px; top:90px;}
+}
+
+@keyframes cloudOneMd {
+    0%   {left:0px; top:90px;}
+    50%  {left:750px; top:90px;}    
+    100% {left:0px; top:90px;}
+}
+
+@keyframes cloudTwoMd {
+    0%   {left:750px; top:90px;}
+    50%  {left:0px; top:90px;}    
+    100% {left:750px; top:90px;}
+}
+
+@keyframes cloudOneSm {
+    0%   {left:0px; top:90px;}
+    50%  {left:450px; top:90px;}    
+    100% {left:0px; top:90px;}
+}
+
+@keyframes cloudTwoSm {
+    0%   {left:450px; top:90px;}
+    50%  {left:0px; top:90px;}    
+    100% {left:450px; top:90px;}
+}
+
+@keyframes cloudOneXs {
+    0%   {left:0px; top:90px;}
+    50%  {left:150px; top:90px;}    
+    100% {left:0px; top:90px;}
+}
+
+@keyframes cloudTwoXs {
+    0%   {left:150px; top:90px;}
+    50%  {left:0px; top:90px;}    
+    100% {left:150px; top:90px;}
+}
