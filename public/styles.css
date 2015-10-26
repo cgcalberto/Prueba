@@ -281,6 +281,10 @@ footer > div{
     padding-top: 30px;
 }
 
+.fixed_footer{
+	position: fixed !important;
+}
+
 
 /************************MEDIA QUERIES********************/
 
@@ -300,6 +304,9 @@ footer > div{
         background-size: 280px 180px;
         animation-name: cloudTwoMd;
         animation-duration: 120s;
+    }
+    footer{
+    	position: relative;
     }
 }
 

@@ -72,7 +72,7 @@
                 <div class="col-md-3 col-lg-4"></div>
             </div>
         </div>
-        <footer role="footer">
+        <footer ng-class="{'fixed_footer': songsCount<3}">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><h5>© 2011 The Hangar Interactive. All rights reserved.</h5></div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><h5>Privacy Policy | Terms of Use | Contact Us</h5></div>
         </footer>

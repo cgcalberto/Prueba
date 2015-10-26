@@ -3,8 +3,10 @@
 
 myApp.controller('songsCtrl', function($scope, $http, songService) {
 	$scope.songs = {};
+	$scope.songsCount = 0;
 	songService.getSongs().then(function(data){
 		$scope.songs = data;
+		$scope.songsCount = data.length;
 	},function(error){
 		console.log('error');
 	});
@@ -30,6 +32,7 @@ myApp.controller('songsCtrl', function($scope, $http, songService) {
 			}
 			if(results.length>0){
 				$scope.songs = results;
+				$scope.songsCount = results.length;
 			}	
 		},function(error){
 			console.log('error');
@@ -40,6 +43,7 @@ myApp.controller('songsCtrl', function($scope, $http, songService) {
 		if(params.length===0){
 			songService.getSongs().then(function(data){
 				$scope.songs = data;
+				$scope.songsCount = data.length;
 			},function(error){
 				console.log('error');
 			});
